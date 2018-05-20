@@ -53,30 +53,30 @@ namespace MiningPredictionAPI.Controllers
         //}
 
         // POST api/values
-        [HttpPost]
-        public IActionResult Post([FromBody]string value)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            else
-            {
-                return CreatedAtAction("Get", new { Id = value }, value);
-            }
-        }
+        //[HttpPost]
+        //public IActionResult Post([FromBody]string value)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+        //    else
+        //    {
+        //        return CreatedAtAction("Get", new { Id = value }, value);
+        //    }
+        //}
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+        //// PUT api/values/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody]string value)
+        //{
+        //}
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 
     public class Token

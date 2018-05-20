@@ -56,32 +56,32 @@ namespace MiningPredictionAPI.Controllers
             return new Value { Id=id,Text="Value"};
         }
 
-        // POST api/values
-        [HttpPost]
-        [Produces("application/Json", Type= typeof(Value))]
-        public IActionResult Post([FromBody]Value value)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            else
-            {
-                return CreatedAtAction("Get", new { Id = value.Id }, value);
-            }
-        }
+        //// POST api/values
+        //[HttpPost]
+        //[Produces("application/Json", Type= typeof(Value))]
+        //public IActionResult Post([FromBody]Value value)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+        //    else
+        //    {
+        //        return CreatedAtAction("Get", new { Id = value.Id }, value);
+        //    }
+        //}
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+        //// PUT api/values/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody]string value)
+        //{
+        //}
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
 
         public class BToken
         {
